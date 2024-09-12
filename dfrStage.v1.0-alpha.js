@@ -373,6 +373,38 @@ class Line extends StyledStageObject {
       .setStrokeColor(0);
   }
 
+  get x1() {
+    return this.location1.x;
+  }
+
+  get y1() {
+    return this.location1.y;
+  }
+
+  get x2() {
+    return this.location2.x;
+  }
+
+  get y2() {
+    return this.location2.y;
+  }
+
+  set x1(x) {
+    this.location1.x = x;
+  }
+
+  set y1(y) {
+    this.location1.y = y;
+  }
+
+  set x2(x) {
+    this.location2.x = x;
+  }
+
+  set y2(y) {
+    this.location2.y = y;
+  }
+
   setStart(l) {
     this.location1 = l;
   }
