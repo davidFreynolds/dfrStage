@@ -333,6 +333,22 @@ class Point extends StyledStageObject {
       .setStrokeColor(color(0));
   }
 
+  get x() {
+    return this.location.x;
+  }
+
+  get y() {
+    return this.location.y;
+  }
+
+  set x(x) {
+    this.location.x = x;
+  }
+
+  set y(y) {
+    this.location.y = y;
+  }
+
   setXY(x, y) {
     this.location.set(x, y);
     return this; // chainable
